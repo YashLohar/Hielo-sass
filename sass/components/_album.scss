@@ -1,0 +1,9 @@
+.photo{
+    width: 45%;
+    margin-bottom: 50px;
+    border: 10px solid $primary-color;
+
+    @include media(1200px){
+        width: 100%;
+    }
+}

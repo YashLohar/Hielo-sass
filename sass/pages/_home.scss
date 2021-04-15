@@ -1,0 +1,58 @@
+.card-section{
+     width: 100%;
+     padding: 70px 0px;
+     background-color: #dfdfdf;
+
+     .cards{
+         @include container;
+         @include flex;
+         padding: 0 12rem;
+         justify-content: space-between;
+
+         @include media(1200px){
+             padding: 0 2rem;
+         }
+     }
+}
+
+.text-area{
+    padding: 3rem 0;
+    background-image: url(../../img/bg.jpg);
+    color: $primary-color;
+    text-align: center;
+    background-size: cover;
+    background-position:center center;
+
+    &__text{
+        font-weight: 300;
+        letter-spacing: 4px;
+        font-size: .7rem;
+    }
+
+    hr{
+        width: 50%;
+        margin: 10px auto;
+    }
+
+    &__heading{
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+}
+
+.photo-album{
+    width: 100%;
+    padding: 70px 0px;
+    background-color: #dfdfdf;
+
+    .photos{
+        @include container;
+        @include flex;
+        padding: 0 12rem;
+        justify-content: space-between;
+
+        @include media(1200px){
+            padding: 0 2rem;
+        }
+    }
+}

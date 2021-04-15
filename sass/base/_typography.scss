@@ -1,0 +1,27 @@
+.banner__text{
+    @include container;
+    padding: 0 2rem;
+    position: relative;
+    top: 45%;
+    color: $primary-color;
+    text-align: center;
+
+    p{
+        font-weight: 300;
+        font-size: .7rem;
+        letter-spacing: 4px;
+    }
+    hr{
+        width: 50%;
+        margin: 10px auto;
+    }
+    h1{
+        font-size: 6.5rem;
+        font-weight: 300;
+        margin-top: 10px;
+
+        @include media(540px){
+            font-size: 3rem;
+        }
+    }
+}

@@ -1,0 +1,52 @@
+.navigation{
+    @include container;
+    @include flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 1rem;
+    position: absolute;
+    z-index: 10;
+    color: $primary-color;
+
+    &__logo{
+        font-size: .8rem;
+        font-weight: 500;
+
+        span{
+            font-weight: 200;
+        }
+    }
+
+    &__toggle{
+        font-size: .9rem;
+        font-weight: 300;
+        cursor: pointer;
+    }
+
+    &__links{
+          flex-basis: 100%;
+          margin-top: 20px;
+          display: none;
+        ul{
+            @include flex;
+            justify-content: flex-start;
+            list-style: none;
+
+            li{
+                padding-right: 2rem;
+                font-size: .9rem;
+                font-weight: 300;
+
+                @include media(540px){
+                    font-size: .7rem;
+                    padding-right: 1rem;
+                }
+
+                a{
+                    text-decoration: none;
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}

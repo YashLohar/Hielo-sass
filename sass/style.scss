@@ -1,0 +1,27 @@
+@import "abstract/mixin";
+@import "abstract/variable";
+
+@import "base/typography";
+
+@import "components/card";
+@import "components/album";
+
+@import "layout/header";
+@import "layout/navigation";
+@import "layout/footer";
+
+@import "pages/home";
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+body{
+    font-family: "poppins",sans-serif;
+}
